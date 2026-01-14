@@ -62,3 +62,21 @@ body{
     position: relative;
     display: inline-block; 
 }
+
+/*Efecto linea delgada como hover*/
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 5px;
+    right: 0;
+    background: #53565a;
+    transition: width 0.3s ease;
+}
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+    background: #53565a;
+}
