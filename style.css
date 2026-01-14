@@ -32,10 +32,12 @@ body{
 }
 
 .header-title{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-weight: bold;
     margin-left: 50px;
+    text-align: center;
 }
+
 
 .logo-container{
     display: flex;
@@ -79,4 +81,47 @@ body{
     width: 100%;
     left: 0;
     background: #53565a;
+}
+
+.container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+section h3 {
+    margin-bottom: 10px;
+}
+
+section ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+
+.traffic-light {
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 6px;
+    color: white;
+}
+
+.traffic-light.green {
+    background-color: #22c55e;
+}
+
+.traffic-light.yellow {
+    background-color: #facc15;
+    color: #1f2933;
+}
+
+.traffic-light.red {
+    background-color: #ef4444;
 }

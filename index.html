@@ -1,29 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="https://traxion.global/hubfs/traxion-global-sitio-mar24/Nuevos%20Logos%20REDIMENSI%C3%93N/Logos%20TRAXION%20-%20No%20tilde/SVG-500x150_17-TRAXION%20ESP%20GRIS.svg">
+    <link rel="shortcut icon"
+        href="https://traxion.global/hubfs/traxion-global-sitio-mar24/Nuevos%20Logos%20REDIMENSI%C3%93N/Logos%20TRAXION%20-%20No%20tilde/SVG-500x150_17-TRAXION%20ESP%20GRIS.svg">
     <link rel="stylesheet" href="style.css">
     <script src="script.js" defer></script>
     <title>Traxion - Guardian AI</title>
 </head>
+
 <body>
     <nav class="header">
         <div class="header-container">
             <div class="logo-container">
-                <img src="https://traxion.global/hubfs/Traxion_LogotipoCT_Gris.png" alt="Traxion Logo" class="logo" loading="lazy">
-                <h1 class="header-title">Guardian AI - Customer Health</h1>
+                <img src="https://traxion.global/hubfs/Traxion_LogotipoCT_Gris.png" alt="Traxion Logo" class="logo"
+                    loading="lazy">
             </div>
+            <h1 class="header-title">Guardian AI - Customer Health Monitor</h1>
 
-        <ul class="nav-links">
-            <li><a href="https://traxion.global/es/">Servicios</a></li>
-            <li><a href="#features">Features</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <ul class="nav-links">
+                <li><a href="https://traxion.global/es/">Servicios</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
     </nav>
 
+    <main class="container">
+
+        <section class="client-card">
+            <h2>Cliente: Empresa TRAXION</h2>
+            <p>Cuenta activa · Servicio corporativo</p>
+        </section>
+
+        <section class="risk-status">
+            <h3>Nivel de Riesgo</h3>
+            <div id="trafficLight" class="traffic-light">
+                <span id="riskText"></span>
+            </div>
+        </section>
+
+        <section class="metrics">
+            <h3>Métricas Evaluadas</h3>
+            <ul>
+                <li>Nivel de servicio: <span id="serviceLevel"></span>%</li>
+                <li>Puntualidad: <span id="onTime"></span>%</li>
+                <li>NPS: <span id="nps"></span>/10</li>
+                <li>Quejas abiertas: <span id="complaints"></span></li>
+            </ul>
+        </section>
+
+        <section class="actions">
+            <h3>Acciones Preventivas Sugeridas</h3>
+            <ul id="actionsList">
+            </ul>
+        </section>
+    </main>
 </body>
 </html>
