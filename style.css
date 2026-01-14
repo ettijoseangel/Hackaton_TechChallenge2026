@@ -105,6 +105,18 @@ section ul {
     padding-left: 20px;
 }
 
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 20px;
+}
+
+/* Sección 1: ocupa dos filas */
+.risk-status {
+    grid-row: span 2;
+}
+
 .traffic-light {
     padding: 15px;
     text-align: center;
