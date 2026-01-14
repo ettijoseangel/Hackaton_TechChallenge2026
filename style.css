@@ -9,13 +9,56 @@ body{
     background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
-    padding: 20px;
 }
 
-header{
+.header{
     background: #d0df00;
     color: #53565a;
-    padding: 10px 0;
+    padding: 22px 36px 22px 36px;
     text-align: center;
-    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.header-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 50px;
+}
+
+.logo-container{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.logo{
+    height: 40px;
+}
+
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a{
+    color: #53565a;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+    display: inline-block; 
 }
