@@ -13,7 +13,7 @@ function procesarIA() {
         <div class="bar-bg"><div class="bar-fill" style="width: ${servicio}%; background: ${servicio < 70 ? '#d9534f' : '#5DA83B'};"></div></div>
     </div>
     <div class="metric-container">
-        <label">Puntualidad (${puntualidad}%)</label>
+        <label>Puntualidad (${puntualidad}%)</label>
         <div class="bar-bg"><div class="bar-fill" style="width: ${puntualidad}%; background: ${puntualidad < 80 ? '#d9534f' : '#5DA83B'};"></div></div>
     </div>
     <div class="metric-container">
