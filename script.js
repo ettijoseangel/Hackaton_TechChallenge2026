@@ -13,7 +13,7 @@ function procesarIA() {
         <div class="bar-bg"><div class="bar-fill" style="width: ${servicio}%; background: ${servicio < 70 ? '#d9534f' : '#5DA83B'};"></div></div>
     </div>
     <div class="metric-container">
-        <label>Puntualidad (${puntualidad}%)</label>
+        <label">Puntualidad (${puntualidad}%)</label>
         <div class="bar-bg"><div class="bar-fill" style="width: ${puntualidad}%; background: ${puntualidad < 80 ? '#d9534f' : '#5DA83B'};"></div></div>
     </div>
     <div class="metric-container">
@@ -40,7 +40,7 @@ function procesarIA() {
         nivelH2.innerText = "RIESGO CRÍTICO";
         box.style.borderColor = "#d9534f";
         luz.style.backgroundColor = "#d9534f";
-        diagTexto.innerText = "Se detecta un colapso en los indicadores operativos. El cliente está en la fase final antes de una posible rescisión.";
+        diagTexto.innerText = "Se detecta un colapso en los indicadores operativos. El cliente está en la fase final antes de una posible recesión.";
         acciones.innerHTML = `
             <li>Activación inmediata de un plan de retención.</li>
             <li>Escalamiento interno y contacto directo con el cliente.</li>
