@@ -1,6 +1,6 @@
 # ⛨ Customer Health Monitor - Proyecto desarrollado para el Hackatón - TechChallenge 2025
 
-> ** 👨🏻‍💻👩🏻‍💻 Proyecto desarrollado por: Santos Morfin Myriam Korina & Zavaleta Ruíz José Ángel.**
+>  👨🏻‍💻👩🏻‍💻 Proyecto desarrollado por: Santos Morfin Myriam Korina & Zavaleta Ruíz José Ángel.
 ---
 ## 🔴 Objetivo del proyecto
 Este proyecto tiene como objetivo resolver la problemática del Eje 2 - Detección temprana de clientes en riesgo (Customer Health) 
@@ -10,8 +10,8 @@ mediante una página web creada con las tecnologías HTML, CSS y JavaScript, apl
 ---
 ## </> Tecnologías Utilizadas
 * **HTML5:** Estructura semántica del panel de control.
-* **CSS3:** Diseño responsivo con identidad visual corporativa de Traxión.
-* **JavaScript (Vanilla):** Lógica simuladas del motor de decisión del Agente IA.
+* **CSS3:** Diseño responsivo con identidad visual corporativa.
+* **JavaScript (Vanilla):** Lógica simulada del motor de decisión del Agente de IA mediante la implementación de JavaScript.
 
 ---
 ## 🌐 Publicación
