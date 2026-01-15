@@ -14,29 +14,35 @@ body{
 
 .header{
     background: #d0df00;
-    color: #53565a;
+    color: black;
     padding: 22px 36px 22px 36px;
+    height: 90px;
     text-align: center;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 .header-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     width: 100%;
     margin-left: 72px;
     margin-right: 72px;
 }
 
 .header-title{
-    font-size: 1.3rem;
+    font-size: 2rem;
     font-weight: bold;
     margin-left: 50px;
     text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 
@@ -57,10 +63,10 @@ body{
 }
 
 .nav-links a{
-    color: #53565a;
+    color: black;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     transition: all 0.3s ease-in-out;
     position: relative;
     display: inline-block; 
@@ -87,7 +93,6 @@ body{
 
 .main-container {
     display: flex;
-    flex: 1;
     overflow: hidden;
 }
 
@@ -95,7 +100,7 @@ body{
 /*Formulario en el aside*/
 aside{
     background-color: #333F48;
-    width: 320px;
+    width: 450px;
     height: 92vh;
     padding: 2rem;
     color: white;
@@ -107,7 +112,7 @@ aside{
 
 .sidebar-title{
     color: #d0df00; 
-    font-size: 0.9rem; 
+    font-size: 1.3rem; 
     margin-bottom: 0.5rem; 
     border-bottom: 1px solid rgba(255,255,255,0.1); 
     padding-bottom: 0.5rem; 
@@ -124,9 +129,9 @@ aside{
 }
 
 label{
-    font-size: 0.65rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: #bbb;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -155,7 +160,7 @@ input[type=number] {
 }
 
 
-.aside-button {
+.aside-button{
     background: #d0df00;
     color: #333F48;
     border: none;
@@ -166,3 +171,147 @@ input[type=number] {
     cursor: pointer;
     transition: background 0.3s ease;
 }
+
+
+/*De*/
+.aside-button:disabled {
+    background: #555;
+    color: #888;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+#nivel-riesgo {
+    color: #6c757d; /* Texto gris */
+}
+
+
+/* Área de Contenido Principal */
+.content{
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    overflow-y: auto;
+}
+
+.card{
+    background: white;
+    padding: 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+/* Semáforo e IA */
+#semaforo-box{ 
+    border-left: 20px solid #adb5bd;;
+    transition: border-color 0.5s ease; 
+}
+
+.status-header{ 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.label-caps{ 
+    color: #999; 
+    font-size: 1.2rem;
+    font-weight: 800; 
+    letter-spacing: 1px; 
+}
+
+#nivel-riesgo{ 
+    font-size: 3.5rem; 
+    font-weight: 900; 
+    color: #333F48; 
+    line-height: 1; margin-top: 0.5rem;
+}
+
+.circulo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #adb5bd;;
+    box-shadow: 0 0 20px none;
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+.diagnosis-text{ 
+    margin-top: 1.5rem; 
+    color: #555; 
+    font-size: 1.2rem; 
+    line-height: 1.6; 
+    font-style: italic; 
+}
+
+/* Grid de detalles */
+.dashboard-grid{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 2rem; }
+
+.acciones-card{ 
+    background-color: #002E69; 
+    color: white; 
+}
+
+.card-title-white{ 
+    color: #d0df00;
+    font-size: 1.2rem; 
+    letter-spacing: 1px; 
+    border-bottom: 1px solid rgba(255,255,255,0.1); 
+    padding-bottom: 1rem; 
+}
+
+.card-title-blue{ 
+    color: #002E69;
+    font-size: 1.2rem; 
+    letter-spacing: 1px; 
+    border-bottom: 1px solid #eee; 
+    padding-bottom: 1rem; 
+}
+
+ul{ 
+    list-style: none; 
+    margin-top: 1.5rem; 
+}
+
+li{ 
+    margin-bottom: 0.8rem; 
+    font-size: 0.95rem; 
+    padding: 1rem; 
+    background: rgba(255,255,255,0.05); 
+    border-radius: 10px; 
+    border-left: 4px solid #d0df00; 
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+.impact-text{ 
+    font-size: 0.9rem; 
+    color: #666; 
+    margin-top: 1.5rem; 
+    line-height: 1.5; 
+}
+
+.metricas-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
+
+.dato-item {
+    background: #f8f9fa;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border-left: 3px solid #002E69;
+}
+
+
+.bar-bg { background: #eee; height: 10px; border-radius: 5px; margin-bottom: 10px; overflow: hidden; }
+.bar-fill { background: #002E69; height: 100%; transition: width 0.5s ease-in-out; }
+.metric-container label { color: #333; font-size: 1.0rem; }

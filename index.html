@@ -5,10 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon"
-        href="https://traxion.global/hubfs/traxion-global-sitio-mar24/Nuevos%20Logos%20REDIMENSI%C3%93N/Logos%20TRAXION%20-%20No%20tilde/SVG-500x150_17-TRAXION%20ESP%20GRIS.svg">
+    <link rel="shortcut icon" href="https://traxion.global/hubfs/traxion-global-sitio-mar24/Nuevos%20Logos%20REDIMENSI%C3%93N/Logos%20TRAXION%20-%20No%20tilde/SVG-500x150_17-TRAXION%20ESP%20GRIS.svg">
     <link rel="stylesheet" href="style.css">
-    <script type="module" src="script.js" defer></script>
+
     <title>Traxion - Guardian AI</title>
 </head>
 
@@ -19,7 +18,8 @@
                 <img src="https://traxion.global/hubfs/Traxion_LogotipoCT_Gris.png" alt="Traxion Logo" class="logo"
                     loading="lazy">
             </div>
-            <h1 class="header-title">Guardian AI - Customer Health Monitor</h1>
+
+        <h1 class="header-title">Customer Health Monitor</h1>
 
             <ul class="nav-links">
                 <li><a href="https://traxion.global/es/">Servicios</a></li>
@@ -34,7 +34,7 @@
 
         <aside>
             <h3 class="sidebar-title">Métricas del Cliente</h3>
-
+            
             <div class="input-group">
                 <label>Nivel de Servicio (%)</label>
                 <input type="number" id="in-servicio" min="0" max="100" placeholder="85" required onkeydown="return event.keyCode !== 69">
@@ -46,19 +46,59 @@
             </div>
 
             <div class="input-group">
-                <label>Satisfacción (0-10)</label>
+                <label>NPS (0-10)</label>
                 <input type="number" id="in-nps" min="0" max="10" placeholder="7" required onkeydown="return event.keyCode !== 69">
             </div>
 
             <div class="input-group">
-                <label>Quejas Abiertas</label>
+                <label>Quejas Abiertas (0-25)</label>
                 <input type="number" id="in-quejas" min="0" max="25" placeholder="1" required onkeydown="return event.keyCode !== 69">
             </div>
 
             <button class="aside-button" onclick="procesarIA()">Analizar Riesgo</button>
         </aside>
 
-        
+        <section class="content">
+            <div class="card" id="semaforo-box">
+                <div class="status-header">
+                    <div>
+                        <p class="label-caps">DIAGNÓSTICO DEL AGENTE IA</p>
+                        <h2 id="nivel-riesgo">ANALIZANDO...</h2>
+                    </div>
+                    <div class="circulo" id="luz-semaforo"></div>
+                </div>
+                <p id="explicacion" class="diagnosis-text">
+                    Cargue los datos para generar una explicación clara del diagnóstico preventivo.
+                </p>
+            </div>
+
+            <div class="dashboard-grid">
+                <div class="card info-card">
+                    <h4 class="card-title-blue">MÉTRICAS EVALUADAS</h4>
+                    <div id="resumen-metricas" class="metricas-lista"></div>
+                    <p class="impact-text" style="font-size: 1.2rem; margin-top: 10px;">
+                        Indicadores integrados para una lectura única.
+                    </p>
+                </div>
+
+                <div class="card info-card">
+                    <h4 class="card-title-blue">DIAGNÓSTICO IA</h4>
+                    <p id="detalle-diagnostico" class="diagnosis-text" style="font-size: 1.2rem; font-style: normal; margin-top: 1rem; letter-spacing: 1px;">
+                        Esperando análisis...
+                    </p>
+                    <div id="status-tag" style="margin-top: 10px;"></div>
+                </div>
+            
+                <div class="card acciones-card">
+                    <h4 class="card-title-white">ACCIONES PREVENTIVAS</h4>
+                    <ul id="lista-acciones">
+                        <li>Analice para ver recomendaciones.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
