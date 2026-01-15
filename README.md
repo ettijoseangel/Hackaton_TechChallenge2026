@@ -12,8 +12,8 @@ mediante una página web creada con las tecnologías HTML, CSS y JavaScript, y a
 * **CSS3:** Diseño responsivo con identidad visual corporativa de Traxión.
 * **JavaScript (Vanilla):** Lógica simuladas del motor de decisión del Agente IA.
 
---
-## Cómo ejecutar el proyecto.
+---
+## ▶️ Cómo ejecutar el proyecto.
 1. Descarga la carpeta del proyecto.
 2. Asegúrate de que los archivos `index.html`, `style.css` y `script.js` estén en la misma ubicación.
 3. Abre `index.html` en cualquier navegador web moderno (Chrome, Edge, Firefox).
