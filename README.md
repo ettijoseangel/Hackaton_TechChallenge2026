@@ -1,5 +1,6 @@
 # ⛨ Customer Health Monitor - Proyecto desarrollado para el Hackatón - TechChallenge 2025
 
+> **" 👨🏻‍💻👩🏻‍💻 Proyecto desarrollado por: Santos Morfin Myriam Korina & Zavaleta Ruíz José Ángel."**
 ---
 ## 🔴 Objetivo del proyecto
 Este proyecto tiene como objetivo resolver la problemática del Eje 2 - Detección temprana de clientes en riesgo (Customer Health) 
